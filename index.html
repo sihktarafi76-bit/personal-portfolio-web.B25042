@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sihkta Rafi Ajis — Software Engineer & Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand">
+        <span class="brand-dot"></span>
+        <span>SIHKTA<span class="accent">.DEV</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Beranda</a>
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#projects" class="nav-link">Proyek</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Ganti Tema" title="Ganti Tema">
+          <svg id="sunIcon" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="moonIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="Buka Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="badge">
+            <span class="pulse"></span>
+            <span>Surakarta, Jawa Tengah • Tersedia untuk Kolaborasi</span>
+          </div>
+          <h1 class="hero-title">
+            Halo, saya <br />
+            <span class="highlight">Sihkta Rafi Ajis</span>
+          </h1>
+          <p class="hero-role">
+            &gt; <span id="typedText"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero-desc">
+            Mahasiswa D4 Teknologi Rekayasa Perangkat Lunak (TRPL) yang menggabungkan logika arsitektur perangkat lunak, basis data relasional, dan estetika desain grafis vektor kontras tinggi.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+            <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <!-- Terminal JSON Card -->
+        <div class="hero-card reveal">
+          <div class="terminal">
+            <div class="terminal-header">
+              <div class="dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">sihkta@solo:~/profile.json</span>
+            </div>
+            <pre class="terminal-body"><code>{
+  <span class="key">"nama"</span>: <span class="str">"Sihkta Rafi Ajis"</span>,
+  <span class="key">"lokasi"</span>: <span class="str">"Surakarta (Solo), ID"</span>,
+  <span class="key">"pendidikan"</span>: <span class="str">"D4 Teknologi Rekayasa Perangkat Lunak"</span>,
+  <span class="key">"fokus"</span>: [
+    <span class="str">"Full-Stack Web Development"</span>,
+    <span class="str">"Relational Database Design"</span>,
+    <span class="str">"Vector &amp; Typography Design"</span>
+  ],
+  <span class="key">"brand"</span>: <span class="str">"Sihkta.rbw"</span>,
+  <span class="key">"status"</span>: <span class="bool">true</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 01. TENTANG SAYA</span>
+          <h2 class="section-title">Menjembatani Kode &amp; Visual</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Berbasis di <strong>Surakarta (Solo)</strong>, saya menempuh pendidikan vokasi D4 di bidang <strong>Teknologi Rekayasa Perangkat Lunak</strong>. Saya memiliki pendekatan analitis dalam memecahkan masalah sistem—mulai dari perancangan alur tiket terintegrasi hingga pengolahan bahasa alami (NLP).
+            </p>
+            <p>
+              Di luar baris kode, saya aktif mengeksplorasi desain grafis vektor menggunakan <strong>Inkscape</strong>, tipografi kaos streetwear melalui lini <strong>Sihkta.rbw</strong>, serta identitas visual seragam teknik dengan palet warna tegas merah, hitam, dan putih.
+            </p>
+          </div>
+
+          <div class="stats-grid reveal">
+            <div class="stat-card">
+              <span class="stat-num">D4</span>
+              <span class="stat-label">Rekayasa Perangkat Lunak</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Proyek Sistem &amp; Brand Aktif</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Disiplin: Dev &amp; Desain Vektor</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Fokus pada Detail &amp; Struktur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section alt-bg">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 02. KEAHLIAN</span>
+          <h2 class="section-title">Stack &amp; Perangkat Kerja</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Web &amp; Software Dev</h3>
+            <p>Membangun antarmuka responsif dan logika aplikasi yang terstruktur dan efisien.</p>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>Python / NLP</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">{DB}</div>
+            <h3>Analisis &amp; Basis Data</h3>
+            <p>Perancangan ERD, normalisasi tabel relasional, serta analisis kebutuhan sistem informasi.</p>
+            <div class="tags">
+              <span>MySQL</span>
+              <span>System Analysis</span>
+              <span>UML / Flowchart</span>
+              <span>POS &amp; Ticketing</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">✦</div>
+            <h3>Desain Grafis &amp; Vektor</h3>
+            <p>Ilustrasi vektor solid block, tipografi apparel, dan identitas merek yang kuat.</p>
+            <div class="tags">
+              <span>Inkscape</span>
+              <span>Vector Art</span>
+              <span>T-Shirt Typography</span>
+              <span>Brand Identity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 03. PORTOFOLIO</span>
+          <h2 class="section-title">Proyek Pilihan</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar reveal" role="tablist">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="software">Software &amp; Sistem</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; NLP</button>
+          <button class="filter-btn" data-filter="design">Desain &amp; Brand</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-category="software">
+            <div class="project-banner banner-red">
+              <span class="project-badge">Sistem Informasi</span>
+              <span class="project-code">SYS // 01</span>
+            </div>
+            <div class="project-body">
+              <h3>Sistem Ticketing Wisata Banyu Lemon</h3>
+              <p>
+                Perancangan sistem tiket mobile &amp; tablet terintegrasi untuk manajemen tiket masuk, wahana perahu kayuh, area camping, parkir, dan cetak struk mini printer.
+              </p>
+              <div class="tags">
+                <span>System Analysis</span>
+                <span>Mobile/Tablet UI</span>
+                <span>Database</span>
+              </div>
+              <button class="btn-link open-modal" data-project="banyu">
+                Detail Proyek →
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-category="ai">
+            <div class="project-banner banner-dark">
+              <span class="project-badge">NLP &amp; Keamanan</span>
+              <span class="project-code">NLP // 02</span>
+            </div>
+            <div class="project-body">
+              <h3>SMS &amp; Chat Scam Detector</h3>
+              <p>
+                Aplikasi deteksi pesan penipuan berbasis Natural Language Processing (NLP) dengan analisis multi-faktor untuk mengidentifikasi pola tautan dan teks berbahaya.
+              </p>
+              <div class="tags">
+                <span>NLP</span>
+                <span>Text Classification</span>
+                <span>Multi-Factor</span>
+              </div>
+              <button class="btn-link open-modal" data-project="scam">
+                Detail Proyek →
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-category="design">
+            <div class="project-banner banner-contrast">
+              <span class="project-badge">Streetwear &amp; Vektor</span>
+              <span class="project-code">RBW // 03</span>
+            </div>
+            <div class="project-body">
+              <h3>Sihkta.rbw Apparel &amp; PDH TRPL</h3>
+              <p>
+                Eksplorasi merek streetwear dengan grafis vektor solid merah-hitam-putih serta desain seragam kerja (PDH) angkatan TRPL bertipografi teknis.
+              </p>
+              <div class="tags">
+                <span>Inkscape</span>
+                <span>Typography</span>
+                <span>Apparel Design</span>
+              </div>
+              <button class="btn-link open-modal" data-project="rbw">
+                Detail Proyek →
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section alt-bg">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-tag">// 04. KONTAK</span>
+          <h2 class="section-title">Mari Berdiskusi</h2>
+          <p>
+            Tertarik berkolaborasi dalam pengembangan aplikasi web, perancangan basis data, atau desain grafis apparel? Kirim pesan melalui formulir di samping.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <strong>Domisili:</strong> Surakarta (Solo), Jawa Tengah
+            </li>
+            <li>
+              <strong>Bidang:</strong> Software Engineering &amp; Vector Design
+            </li>
+            <li>
+              <strong>Status:</strong> Terbuka untuk Proyek &amp; Diskusi Teknis
+            </li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+            <small class="error-msg" id="nameError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+            <small class="error-msg" id="emailError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="topic">Topik</label>
+            <select id="topic" name="topic">
+              <option value="Web Development">Pengembangan Web / Sistem</option>
+              <option value="Graphic Design">Desain Grafis / Vektor Apparel</option>
+              <option value="Collaboration">Kolaborasi Akademik / Proyek</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tuliskan detail kebutuhan atau pesan Anda..." required></textarea>
+            <small class="error-msg" id="messageError"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> <strong>Sihkta Rafi Ajis</strong>. Dibangun dengan HTML, CSS &amp; Vanilla JS.</p>
+      <a href="#home" class="back-top">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div id="projectModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button id="closeModal" class="modal-close" aria-label="Tutup Modal">&times;</button>
+      <span id="modalTag" class="section-tag"></span>
+      <h3 id="modalTitle" class="modal-title"></h3>
+      <p id="modalDesc" class="modal-desc"></p>
+      <div class="modal-highlights">
+        <h4>Poin Utama &amp; Implementasi:</h4>
+        <ul id="modalList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
